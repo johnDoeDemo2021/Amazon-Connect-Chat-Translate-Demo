@@ -208,15 +208,20 @@ const Ccp = () => {
 
     return (
         <main>
-          <Grid columns='equal' stackable padded>
-          <Grid.Row>
-            {/* CCP window will load here */}
-            <div id="ccp-container" style="display: none;"></div>
-            {/* Translate window will laod here. We pass the agent state to be able to use this to push messages to CCP */}
-            <div id="chatroom" ><Chatroom session={agentChatSessionState}/> </div> 
-            </Grid.Row>
-          </Grid>
-        </main>
+    <div class="ui stackable padded equal width grid">
+       <div class="row">
+          <div id="ccp-container"><iframe src="https://workshop-1639663396-9530.my.connect.aws/connect/ccp-v2/" allow="microphone; autoplay" style="display: none;" title="Amazon Connect CCP"></iframe></div>
+          <div id="chatroom">
+             <div class="chatroom">
+                <h3>Translate - () </h3>
+                <ul class="chats"></ul>
+                <form class="input"><input maxlength="1024" type="text" value=""><input type="submit" value="Submit"></form>
+             </div>
+          </div>
+       </div>
+    </div>
+ </main>
+ 
     );
 };
 
