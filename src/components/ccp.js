@@ -210,7 +210,7 @@ const Ccp = () => {
         <main>
     <div class="ui stackable padded equal width grid">
        <div class="row">
-          <div id="ccp-container"><iframe src="https://workshop-1639663396-9530.my.connect.aws/connect/ccp-v2/" allow="microphone; autoplay" style="display: none;" title="Amazon Connect CCP"></iframe></div>
+          <div id="ccp-container" style="display: none;"><iframe src="https://workshop-1639663396-9530.my.connect.aws/connect/ccp-v2/" style="width: 100%; height: 100%;" allow="microphone; autoplay"  title="Amazon Connect CCP"></iframe></div>
           <div id="chatroom">
              <div class="chatroom">
                 <h3>Translate - () </h3>
